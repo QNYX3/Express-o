@@ -78,7 +78,7 @@ public class customize extends AppCompatActivity {
 
 // Create the AlertDialog
         AlertDialog dialog = builder.create();
-        dialog.setMessage("Your customization: " + selectedtext);
+        dialog.setMessage("Your customization: " + selectedtext +"\nProceed to checkout?");
         dialog.show();
 
 
