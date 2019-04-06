@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Order"
+            android:label="@string/title_activity_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".customize"
+            android:label="@string/title_activity_customize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QR"
+            android:label="@string/title_activity_qr"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
