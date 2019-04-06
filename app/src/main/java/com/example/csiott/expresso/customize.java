@@ -8,8 +8,11 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 
 public class customize extends AppCompatActivity {
@@ -29,8 +32,30 @@ public class customize extends AppCompatActivity {
 
 
 
+
+
+
     public void onClickCheckout(View v)
     {
+
+
+
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radiogroup);
+//
+
+        int radioButtonID = radioGroup.getCheckedRadioButtonId();
+        View radioButton = radioGroup.findViewById(radioButtonID);
+        int idx = radioGroup.indexOfChild(radioButton);
+
+
+        RadioButton r = (RadioButton) radioGroup.getChildAt(idx);
+        String selectedtext = r.getText().toString();
+
+
+
+
+
+
 
 
 
@@ -53,7 +78,7 @@ public class customize extends AppCompatActivity {
 
 // Create the AlertDialog
         AlertDialog dialog = builder.create();
-        dialog.setMessage("2% Milk Iced Latte \n Price: $3.900 \n Proceed to Checkout?");
+        dialog.setMessage("Your customization: " + selectedtext);
         dialog.show();
 
 
