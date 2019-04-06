@@ -65,12 +65,13 @@
 
     <Button
         android:id="@+id/Coffee"
-        android:onClick="onClickCoffee"
         android:layout_width="218dp"
         android:layout_height="58dp"
-        android:layout_alignStart="@+id/lattebutton"
+        android:layout_alignStart="@+id/Favorite"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="210dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="215dp"
+        android:onClick="onClickCoffee"
         android:text="Coffee" />
 
 </RelativeLayout>

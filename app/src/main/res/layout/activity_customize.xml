@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,14 +20,86 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_customize" />
+    <RadioGroup
+        android:layout_width="157dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="361dp">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        <RadioButton
+            android:id="@+id/NormalMilk"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2% Milk" />
+
+        <RadioButton
+            android:id="@+id/Almondmilk"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Almond Milk" />
+
+        <RadioButton
+            android:id="@+id/SoyMilk"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Soy Milk" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Milktxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="316dp"
+        android:text="Choose your Milk" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <Button
+        android:id="@+id/sizesml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="190dp"
+        android:text="Small" />
+
+    <Button
+        android:id="@+id/Mediumbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sizesml"
+        android:layout_centerHorizontal="true"
+        android:text="Medium" />
+
+    <Button
+        android:id="@+id/Largebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sizesml"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Large" />
+
+    <Button
+        android:id="@+id/checkoutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="onClickCheckout"
+        android:text="Checkout" />
+
+</RelativeLayout>
